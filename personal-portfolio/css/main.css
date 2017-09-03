@@ -1,5 +1,5 @@
 body {
-	margin : 60px;
+	margin: 60px;
 }
 
 hr {
@@ -12,7 +12,7 @@ hr {
 img {
 	height: auto;
 	max-width: 100%;
-	display : block;
+	display: block;
 }
 
 input[type=text] {
@@ -24,11 +24,11 @@ input[type=text] {
 }
 
 .play-button {
-	background-color:#02899e; 
+	background-color: #02899e; 
 	color: white; 
-	height:40px;
-	width:40px;
-	border:0px;
+	height: 40px;
+	width: 40px;
+	border: 0;
 	padding: 10px 10px;
 	text-align: center;
 	text-decoration: none;
@@ -38,12 +38,12 @@ input[type=text] {
 	-webkit-transition-duration: 0.6s; 
 	transition-duration: 0.5s;
 	cursor: pointer;
-	border-radius:50%;
+	border-radius: 50%;
 }
 
 .fb-button {
 	background-color: #3b5998;
-	color:white;
+	color: white;
 		    
 }
 
@@ -53,8 +53,8 @@ input[type=text] {
 }
 
 .tw-button {
-	background-color:#4875b4;
-	color:white;
+	background-color: #4875b4;
+	color: white;
 }
 
 .tw-button:hover {
@@ -63,7 +63,7 @@ input[type=text] {
 }
 
 .in-button {
-	background-color:#33ccff;
+	background-color: #33ccff;
 	color: white;
 }
 
@@ -73,5 +73,5 @@ input[type=text] {
 }
 
 .first-heading {
-	font-size : 60px;
+	font-size: 60px;
 }

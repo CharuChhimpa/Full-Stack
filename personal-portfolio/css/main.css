@@ -7,6 +7,10 @@ hr{
    	color: grey;
     	background-color: grey;
 }
+img{
+	height: 100%;
+	width: 100%;
+}
 input[type=text] {
 	width: 100%;
 	padding: 12px 20px;

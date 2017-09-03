@@ -1,16 +1,19 @@
 body {
-    	margin : 60px;
+	margin : 60px;
 }
-hr{
-    	border: none;
-    	height: 4px;
-   	color: grey;
-    	background-color: grey;
+
+hr {
+	border: none;
+	height: 4px;
+	color: grey;
+	background-color: grey;
 }
-img{
+
+img {
 	height: 100%;
 	width: 100%;
 }
+
 input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
@@ -18,8 +21,9 @@ input[type=text] {
 	border: none;
 	border-bottom: 2px solid black;
 }
-.play-button{
-    	background-color:#02899E; 
+
+.play-button {
+	background-color:#02899e; 
 	color: white; 
 	height:40px;
 	width:40px;
@@ -35,31 +39,38 @@ input[type=text] {
 	cursor: pointer;
 	border-radius:50%;
 }
-.fb-button{
-    	background-color: #3B5998;
+
+.fb-button {
+	background-color: #3b5998;
 	color:white;
 		    
 }
+
 .fb-button:hover {
 	background-color: white;
-	color: #3B5998;
+	color: #3b5998;
 }
-.tw-button{
-    	background-color:#4875B4;
+
+.tw-button {
+	background-color:#4875b4;
 	color:white;
 }
+
 .tw-button:hover {
 	background-color: white;
-	color: #4875B4;
+	color: #4875b4;
 }
-.in-button{
-    	background-color:#33CCFF;
+
+.in-button {
+	background-color:#33ccff;
 	color: white;
 }
+
 .in-button:hover {
 	background-color: white;
-	color: #33CCFF;
+	color: #33ccff;
 }
-.first-heading{
+
+.first-heading {
 	font-size : 60px;
 }

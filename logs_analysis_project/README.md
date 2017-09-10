@@ -17,7 +17,7 @@ This project contains a news dataset and we have to explore the dataset.
     
 3. Check that Vagrant is properly installed or not by typing the command :   
 
-    ``` vagrant -version ```
+    ``` vagrant --version ```
 
 4. Download the VM configuration by downloading the code in your local PC.  
 

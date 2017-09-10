@@ -23,7 +23,7 @@ This project contains a news dataset and we have to explore the dataset.
 
 6. Start the Virtual Machine using commands :   
 
-    ``` vagrant up ```
+    ``` vagrant up ```  
     ``` vagrant ssh ```
 
 7. Now execute the code using the final command :   

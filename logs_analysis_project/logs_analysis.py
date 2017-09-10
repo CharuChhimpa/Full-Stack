@@ -8,9 +8,9 @@ def get_query_results(query):
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     c.execute(query)
-    posts = c.fetchall()
+    query_r = c.fetchall()
     db.close()
-    return posts
+    return query_r
 
 
 def print_query_results(query_results):

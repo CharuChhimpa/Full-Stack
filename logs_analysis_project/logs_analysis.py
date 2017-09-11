@@ -32,7 +32,6 @@ def print_error_results(query_results):
 
 
 """ create  article _view using this query :
-
     "create view article_views as select title, author, count(*) as views
     from articles, log where log.path like concat('%',articles.slug)
     group by articles.title, articles.author order by views desc"

@@ -33,7 +33,7 @@ This project contains a news dataset and we have to explore the dataset.
 
 ## Views Description
 For executing article_view is used. The sql statement for creating article_view is :   
-``` create view article_views as select title, author, count(*) as views from articles, log where log.path like concat('%',articles.slug) group by articles.title, articles.author order by views desc; ```   
+``` create view article_view as select title, author, count(*) as views from articles, log where log.path like concat('%',articles.slug) group by articles.title, articles.author order by views desc; ```   
 
 Then for executing the third query error_requests and total_requests two views are used. The sql statement for those are :   
 ``` create view error_requests as select date(time), count(*) as errors from log where status like '404%' group by date(time) order by errors desc; ```    

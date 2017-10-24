@@ -14,16 +14,18 @@
                 <h1>Hotels in Ganganagar</h1>
                 <div>
                     <form class="form-inline" id="form-search" data-bind="submit: search">
-                        <input type="text" class="form-control" data-bind="value: query" id="query-input" placeholder="Search"
+                        <input type="text" class="form-control filter-p" data-bind="value: query" id="query-input" placeholder="Choose"
                        autofocus>
-                        <button type="submit" id="submit-button" class="btn btn-default">Search</button>
+                        <button type="submit" id="submit-button" class="btn btn-default btn-p">Search</button>
                     </form>
                     <p id="query-summary" data-bind="text: queryResult"></p>
-                    <ul class="list-group" data-bind="foreach: {data: FilteredhotelList, as: 'hotel'}" id="list">
-                        <li data-bind="click: $root.populateInfoWindow" class="list-group-item">
-                            <span data-bind="text: hotel.name"></span>
-                        </li>
-                    </ul>
+                    <aside>
+                        <ul class="list-group" data-bind="foreach: {data: FilteredhotelList, as: 'hotel'}" id="list">
+                            <li data-bind="click: $root.populateInfoWindow" class="list-group-item">
+                                <span data-bind="text: hotel.name"></span>
+                            </li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
             <div id="map"></div>

@@ -22,6 +22,11 @@ h1 {
     text-align: center;
 }
 
+aside{
+    height:50%;
+}
+
+
 span {
     cursor : pointer;
 }
@@ -55,5 +60,6 @@ span {
     .options-box{
         border: 0;
         height: 70%;
+        overflow:scroll;
     }
 }

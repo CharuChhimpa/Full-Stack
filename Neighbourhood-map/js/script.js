@@ -244,10 +244,9 @@ var Foursquare = function (hotel, map) {
     self.id = ko.observable(hotel.id);
     self.url = ko.observable(hotel.url);
     self.formattedInfowindowData = function () {
-        return '<div class="info-window-content">' + '<a href="' + (self.url()===undefined?'/':self.url()) + '">' +
+        return '<div class="info-window-content">' +
             '<span class="info-window-header"><h4>' + (self.name()===undefined?'Hotel not available':self.name()) + '</h4></span>' +
-            '</a><h6>' + (self.formattedAddress()===undefined?'No address available':self.formattedAddress())  + '<br>' + (self.formattedPhone()===undefined?'No Contact Info':self.formattedPhone()) + '</h6>' +
+            '<h6>' + (self.formattedAddress()===undefined?'No address available':self.formattedAddress())  + '<br>' + (self.formattedPhone()===undefined?'No Contact Info':self.formattedPhone()) + '</h6>' +
             '</div>';
     };
 };
-

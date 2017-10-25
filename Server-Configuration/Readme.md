@@ -37,9 +37,11 @@ After this you would have your server running.
 ### Step 3:
 Update the installed packages with following commands :   
 ``` sudo apt-get update
-    sudo apt-get upgrade ```    
+    sudo apt-get upgrade
+```
 
 Other Updates
 ``` sudo apt-get install unattended-upgrades
-    sudo unattended-upgrades ```
+    sudo unattended-upgrades 
+```
 

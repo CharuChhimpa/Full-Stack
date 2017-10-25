@@ -7,7 +7,7 @@ http://165.227.57.104/
 ### SSH Port
 2200
 ### Project URL
-http://charuchhimpa.ml
+http://chhimpa.tk
 
 ## Procedure to be followed : 
 

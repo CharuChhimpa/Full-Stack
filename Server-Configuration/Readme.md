@@ -197,6 +197,29 @@ Check the logs for errors.
 sudo cat /var/log/apache2/error.log
 ```
 
+### Step 13:
+Since google oauth dosen't works with only IP. Setup subdomain and link your ip to it.   
+
+Configure your OAuth 2.0 credential and update authorized origin and redirect URIs with your subdomain.   
+
+Finally to Disbale password based authentication and Root login do the following :   
+In config file
+```
+sudo nano /etc/ssh/sshd_config
+```
+Change
+```
+PermitRootLogin no 
+PasswordAuthentication no
+```
+Save it and restart ssh service
+```
+sudo service ssh restart
+```
+
+## Third Party Resources
+* https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets
+* http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/
 
 
 

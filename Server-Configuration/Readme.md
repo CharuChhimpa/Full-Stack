@@ -16,12 +16,13 @@ First to start a new server we have to create a new droplet on Digital Ocean.
 * Choose Distribution - Ubuntu 16.04 x 64
 * Choose Size - $5/mo
 * Choose preferred datacenter location
-* Now, create new ssh key named 'server_root'.
+* Now, create new ssh key named 'catalog_root'.
   * Open terminal in your pc and run the command : ``` ssh-keygen ```.
-  * Save your key to filepath ``` /Usrers/USER_NAME/.ssh/server_root.
-* Copy the contents of file ``` /Users/USER_NAME/.ssh/server_root.pub.
+  * Save your key to filepath ``` /Usrers/USER_NAME/.ssh/catalog_root```.
+  * Set the passphrase to "password".
+* Copy the contents of file ``` /Users/USER_NAME/.ssh/catalog_root.pub```.
 * Return to create droplets form and click on new ssh button.
-* Paste the data to contents section and name it to 'server_root'.
+* Paste the data to contents section and name it to 'catalog_root'.
 * Choose droplet no. to be 1.
 * Name your droplet.
 * Finish. Click on Create button.
@@ -29,7 +30,7 @@ First to start a new server we have to create a new droplet on Digital Ocean.
 ### Step 2:
 Your new droplet is created, congratulations. Now, copy your droplet's IP address and run the command below to ssh into the server :   
 
-``` ssh -i ~/.ssh/server_root root@165.227.57.104 ```   
+``` ssh -i ~/.ssh/catalog_root root@165.227.57.104 ```   
 
 After this you would have your server running.  
 
@@ -57,7 +58,7 @@ Restart ssh server
 
 ### Step 5:
  Now you need to specify pot no. to login
-```ssh -p 2200  -i ~/.ssh/do_root root@YOUR_DROPLET_IP```
+```ssh -p 2200  -i ~/.ssh/catalog_root root@YOUR_DROPLET_IP```
 
 ### Config UFW
 Check current status of UFW
@@ -90,8 +91,8 @@ Now to provide grader the permission to sudo execute the following steps :
 * Now add ``` grader ALL=(ALL) NOPASSWD:ALL ``` to file and save.   
 
 ### Step 7:
-Now setup an ssh key pair for grader using ssh-keygen tool by following the same proceudre mentioned above, changing the location to ```/Users/ USER_NAME/.ssh/server_grader```.   
-Copy the contents of 'server_grader.pub' file.  After this follow the following procedure :    
+Now setup an ssh key pair for grader using ssh-keygen tool by following the same proceudre mentioned above, changing the location to ```/Users/ USER_NAME/.ssh/catalog_grader```.   
+Copy the contents of 'catalog_grader.pub' file.  After this follow the following procedure :    
 * Switch user on server terminal by ```su - grader```.   
 * Create directory named '.ssh' by ```mkdir .ssh```.
 * Create file authorized_keys by ``` nano .ssh/authorized_keys```.   
@@ -101,7 +102,7 @@ Copy the contents of 'server_grader.pub' file.  After this follow the following 
 Now, restart the ssh service :   
 ```sudo service ssh restart```   
 Now you should be able to login as grader. Exit current connection and do the following.  
-``` ssh -p 2200 -i ~/.ssh/server_grader grader@165.227.16.72 ```   
+``` ssh -p 2200 -i ~/.ssh/catalog_grader grader@165.227.16.72 ```   
 
 ### Step 8:
 Now, we have to set the timezone. That can be done by the simple command :   

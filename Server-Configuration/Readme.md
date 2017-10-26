@@ -102,7 +102,7 @@ Copy the contents of 'catalog_grader.pub' file.  After this follow the following
 Now, restart the ssh service :   
 ```sudo service ssh restart```   
 Now you should be able to login as grader. Exit current connection and do the following.  
-``` ssh -p 2200 -i ~/.ssh/catalog_grader grader@165.227.16.72 ```      
+``` ssh -p 2200 -i ~/.ssh/catalog_grader grader@165.227.57.104 ```      
 There is no passphrase needed.
 
 ### Step 8:
@@ -157,7 +157,7 @@ It should have the following components.
 
 ```xml
 <VirtualHost *:80>
-    ServerName 165.227.16.72
+    ServerName 165.227.57.104
 
     WSGIScriptAlias / /var/www/catalog/wsgi.py
 

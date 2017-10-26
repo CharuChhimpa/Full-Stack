@@ -91,7 +91,7 @@ Now to provide grader the permission to sudo execute the following steps :
 * Now add ``` grader ALL=(ALL) NOPASSWD:ALL ``` to file and save.   
 
 ### Step 7:
-Now setup an ssh key pair for grader using ssh-keygen tool by following the same proceudre mentioned above, changing the location to ```/Users/ USER_NAME/.ssh/catalog_grader```.   
+Now setup an ssh key pair for grader using ssh-keygen tool by following the same proceudre mentioned above, changing the location to ```/Users/USER_NAME/.ssh/catalog_grader```. Don't set any passphrase this time.  
 Copy the contents of 'catalog_grader.pub' file.  After this follow the following procedure :    
 * Switch user on server terminal by ```su - grader```.   
 * Create directory named '.ssh' by ```mkdir .ssh```.
@@ -102,7 +102,8 @@ Copy the contents of 'catalog_grader.pub' file.  After this follow the following
 Now, restart the ssh service :   
 ```sudo service ssh restart```   
 Now you should be able to login as grader. Exit current connection and do the following.  
-``` ssh -p 2200 -i ~/.ssh/catalog_grader grader@165.227.16.72 ```   
+``` ssh -p 2200 -i ~/.ssh/catalog_grader grader@165.227.16.72 ```      
+There is no passphrase needed.
 
 ### Step 8:
 Now, we have to set the timezone. That can be done by the simple command :   
